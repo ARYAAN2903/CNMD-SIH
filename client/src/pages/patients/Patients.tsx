@@ -68,7 +68,7 @@ const Patients = () => {
       <div className="info">
         <h1>Patients</h1>
         <Link to="/user_register" className="add-patient-link">
-          Add New Patient
+          Add Patients
         </Link>
       </div>
       <DataTable slug="patients" columns={columns} rows={patientRows} />
