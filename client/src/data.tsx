@@ -66,6 +66,7 @@
       { name: "Fri", users: 500 },
       { name: "Sat", users: 450 },
     ],
+    viewAllLink: "/patients",
   };
   
   export const chartBoxCenter = {
@@ -83,17 +84,26 @@
       { name: "Thu", products: 400 },
       { name: "Fri", products: 500 },
       { name: "Sat", products: 450 },
-    ],
+    ],viewAllLink: "/centers",
   };
-  export const chartBoxStates = {
+  export const chartBoxDoctor = {
     color: "teal",
-    icon: "/revenueIcon.svg",
-    title: "States Covered",
-    number: "28",
-    dataKey: "revenue",
-    
-    
+    icon: "/productIcon.svg",
+    title: "Total Doctors",
+    number: "238",
+    dataKey: "products",
+    percentage: 22,
+    chartData: [
+      { name: "Sun", products: 400 },
+      { name: "Mon", products: 600 },
+      { name: "Tue", products: 500 },
+      { name: "Wed", products: 700 },
+      { name: "Thu", products: 400 },
+      { name: "Fri", products: 500 },
+      { name: "Sat", products: 450 },
+    ],viewAllLink: "/centers",
   };
+
   export const chartBoxSuccesses = {
     color: "gold",
     icon: "/conversionIcon.svg",

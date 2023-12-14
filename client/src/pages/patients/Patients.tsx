@@ -67,7 +67,7 @@ const Patients = () => {
     <div className="users">
       <div className="info">
         <h1>Patients</h1>
-        <Link to="/user_register" className="add-patient-link">
+        <Link to="/patient_register" className="add-patient-link">
           Add Patients
         </Link>
       </div>

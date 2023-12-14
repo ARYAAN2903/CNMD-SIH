@@ -7,7 +7,7 @@ import TopBox from "../../components/topBox/TopBox";
 import {
   barChartBoxRelapse,
   chartBoxCenter,
-  chartBoxStates,
+  chartBoxDoctor,
   chartBoxPatient,
   chartBoxSuccesses,
   barChartBoxSessions,
@@ -33,7 +33,7 @@ const Home = () => {
         <ChartBox {...chartBoxSuccesses} />
       </div>
       <div className="box box6">
-        <ChartBox {...chartBoxStates} />
+        <ChartBox {...chartBoxDoctor} />
       </div>
       <div className="box box7">
         <BigChartBox/>

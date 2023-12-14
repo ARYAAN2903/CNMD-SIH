@@ -10,9 +10,12 @@ type Props = {
   number: number | string;
   percentage: number;
   chartData: object[];
+  viewAllLink: string;
 };
 
 const ChartBox = (props: Props) => {
+  const showViewAllLink = Array.isArray(props.chartData) && props.chartData.length > 0;
+
   return (
     <div className="chartBox">
       <div className="boxInfo">
@@ -21,9 +24,12 @@ const ChartBox = (props: Props) => {
           <span>{props.title}</span>
         </div>
         <h1>{props.number}</h1>
-        <Link to="/" style={{ color: props.color }}>
-          View all
-        </Link>
+        {showViewAllLink && (
+          // Use the Link component from react-router-dom for redirection
+          <Link to={props.viewAllLink} style={{ color: props.color }}>
+            View all
+          </Link>
+        )}
       </div>
       <div className="chartInfo">
         <div className="chart">

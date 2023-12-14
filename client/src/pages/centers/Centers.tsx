@@ -1,7 +1,7 @@
 
 import "./centers.scss";
 import DataTable from "../../components/dataTable/DataTable";
-
+import { Link } from "react-router-dom";
 import { GridColDef } from "@mui/x-data-grid";
 import { centers } from "../../data";
 
@@ -59,7 +59,9 @@ const Centers = () => {
     <div className="products">
       <div className="info">
         <h1>Centers</h1>
-        
+        <Link to="/center_register" className="add-center-link">
+          Add Centers
+        </Link>
       </div>
       <DataTable slug="centers" columns={columns} rows={centers} />
 

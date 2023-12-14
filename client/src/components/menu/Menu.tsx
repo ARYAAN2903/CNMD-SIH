@@ -53,7 +53,7 @@ const Menu = () => {
       {/* Logout */}
       <div className="item">
         <span className="title">Logout</span>
-        <Link to="/logout" className="listItem">
+        <Link to="/login_landing" className="listItem">
           <FaSignOutAlt/>
           <span className="listItemTitle">Log Out</span>
         </Link>
